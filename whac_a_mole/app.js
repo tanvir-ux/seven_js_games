@@ -14,16 +14,14 @@ function randomSquare() {
         square.classList.remove('mole')
     })
     
-    let randomSquare = squares[Math.floor(Math.random() * 9)]
-    console.log(randomSquare)
+    let randomSquare = squares[Math.floor(Math.random() * 9)]    
     randomSquare.classList.add('mole')
 
     hitPosition = randomSquare.id
 }
 
 squares.forEach(square => {
-    square.addEventListener('mousedown', () => {
-        console.log(square.className)
+    square.addEventListener('mousedown', () => {        
         if ( square.id === hitPosition) {
             result++
             score.textContent = result
@@ -32,8 +30,7 @@ squares.forEach(square => {
     })
 })
 
-function moveSquare() {
-    
+function moveSquare() {    
     timerId = setInterval(randomSquare, speed)
 }
 moveSquare()
