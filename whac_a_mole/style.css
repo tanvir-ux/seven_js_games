@@ -1,0 +1,21 @@
+.grid {
+    width: 607px;
+    height: 607px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border: solid black 1px;
+}
+
+.mole {
+    background-image: url('sefuda.png');
+    background-repeat: cover;
+}
+
+.right {
+    float: right;
+}
